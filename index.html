@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Web</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ADD8E6;
+            font-family: 'Share Tech', sans-serif;
+            text-align: center;
+            color:  #2A5C6D;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .Cuerpo {
+            margin-top: 50px;
+        }
+        #pa2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #item1 {
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+        }
+        #item2 {
+            flex: 1 1 100%;
+        }
+        #item3 {
+            flex: 1 1 100%;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        #elTorneo {
+            font-size: 16px;
+        }
+        #ingresar {
+            background-color: #2A5C6D;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Share Tech', sans-serif;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+        #ingresar:hover {
+            background-color:  #3b7f96;
+        }
+        #salida {
+            font-size: 16px;
+        }
+        .logo {
+        font-size: 40px;
+        font-family: 'Share Tech', sans-serif;
+        color: #2A5C6D;
+    }
+    </style>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="Scripts/main.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="logo" id="t1">Estructuras de Datos y Algoritmos</span>
+        </header>
+        <div class="Cuerpo">
+            <div id="pa2">
+                <div id="item1" class="caso">
+                    <h2>Caso:</h2>
+                    <textarea id="elTorneo" cols="60" rows="7" col="1">Word Cup 1998 – Group A--Brazil,Norway,Morocco,Scotland--Brazil#2#1#Scotland,Norway#2#2#Morocco,Scotland#1#1#Norway,Brazil#3#0#Morocco, Morocco#3#0#Scotland,Brazil#1#2#Norway</textarea>
+                </div>
+                <div id="item2">
+                    <button type="button" id="ingresar" col="2">Resultado</button>
+                </div>
+                <div id="item3" class="resultado">
+                    <h2>Resultado:</h2>
+                    <textarea id="salida" cols="60" rows="7" readonly></textarea>
+                </div>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
