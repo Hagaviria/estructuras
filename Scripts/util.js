@@ -5,7 +5,7 @@ function resolverTorneo(torneo) {
 }
 
 function calcularRespuesta(grupo){
-  let cal = "World Cup 1998 - " + grupo[0] + "\n";
+  let cal = " " + grupo[0] + "\n";
   let paises = {}
   grupo[1].split(',').forEach(element => {
     paises[element.trim()] = {
