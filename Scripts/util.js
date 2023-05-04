@@ -20,26 +20,26 @@ function calcularRespuesta(grupo){
   });
   let partidos = grupo[2].split(',');
   partidos.forEach(element => {
-    let [local, golLocal, golVisita, visita] = element.split('#');
-    paises[local.trim()].jugados++;
-    paises[visita.trim()].jugados++;
-    paises[local.trim()].gf += parseInt(golLocal);
-    paises[visita.trim()].gf += parseInt(golVisita);
-    paises[local.trim()].gc += parseInt(golVisita);
-    paises[visita.trim()].gc += parseInt(golLocal);
+    let [local, golLocal, golVisita, visita] = element.split('#').map(x => x.trim());
+    paises[local].jugados++;
+    paises[visita].jugados++;
+    paises[local].gf += parseInt(golLocal);
+    paises[visita].gf += parseInt(golVisita);
+    paises[local].gc += parseInt(golVisita);
+    paises[visita].gc += parseInt(golLocal);
     if (golLocal > golVisita) {
-      paises[local.trim()].puntos += 3;
-      paises[local.trim()].ganados++;
-      paises[visita.trim()].perdidos++;
+      paises[local].puntos += 3;
+      paises[local].ganados++;
+      paises[visita].perdidos++;
     } else if (golLocal < golVisita) {
-      paises[visita.trim()].puntos += 3;
-      paises[visita.trim()].ganados++;
-      paises[local.trim()].perdidos++;
+      paises[visita].puntos += 3;
+      paises[visita].ganados++;
+      paises[local].perdidos++;
     } else {
-      paises[local.trim()].puntos += 1;
-      paises[visita.trim()].puntos += 1;
-      paises[local.trim()].empatados++;
-      paises[visita.trim()].empatados++;
+      paises[local].puntos += 1;
+      paises[visita].puntos += 1;
+      paises[local].empatados++;
+      paises[visita].empatados++;
     }
   });
   let listaPaises = Object.keys(paises).sort((a, b) => {
