@@ -1,0 +1,61 @@
+
+body {
+    background-color: #ADD8E6;
+    font-family: 'Share Tech', sans-serif;
+    text-align: center;
+    color:  #2A5C6D;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.Cuerpo {
+    margin-top: 50px;
+}
+#pa2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#item1 {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+#item2 {
+    flex: 1 1 100%;
+}
+#item3 {
+    flex: 1 1 100%;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+#elTorneo {
+    font-size: 16px;
+}
+#ingresar {
+    background-color: #2A5C6D;
+color: #fff;
+font-size: 18px;
+font-weight: bold;
+font-family: 'Share Tech', sans-serif;
+padding: 10px 20px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+}
+#ingresar:hover {
+    background-color:  #3b7f96;
+}
+#salida {
+    font-size: 16px;
+}
+.logo {
+font-size: 40px;
+font-family: 'Share Tech', sans-serif;
+color: #2A5C6D;
+}
